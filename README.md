@@ -1,9 +1,12 @@
 # facial_landmarks
-Detecting eyes landmarks using MTFL dataset and unet
+Detecting eyes landmarks using MTFL dataset and unet model
 
 To install requirements run :
- pip install -t requirements.txt 
- 
+```
+ pip install -r requirements.txt 
+```
  
  To detect eyes centres run:
- python run -i /path/to/input/file
+```
+ python run.py -i /path/to/input/file
+```
