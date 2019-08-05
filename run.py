@@ -45,7 +45,7 @@ def main(args):
         print("can't load image, error: ", e)
         return
 
-    if len(image) == 2:
+    if len(image.shape) == 2:
         image = gray2rgb(image)
 
     if image.shape[-1] == 4:
@@ -85,6 +85,7 @@ def main(args):
         if right["max_score"] > THRESHOLD:
             plt.scatter(right["x"], right["y"], color="blue")
         fig.savefig(args.output)
+
 
 if __name__ == "__main__":
     args = parse_args()
