@@ -41,7 +41,7 @@ def get_top_k_predictions_mean(heatmap, top_k):
 def main(args):
     try:
         image = imread(args.image)
-    except Exception() as e:
+    except Exception as e:
         print("can't load image, error: ", e)
         return
 
